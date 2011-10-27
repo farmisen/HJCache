@@ -97,8 +97,16 @@
 }
 
 
+-(void) callbackCancelToUsers {
+    [self markCancelled];
+}
+
 -(UIImage*) image {
 	return image; 
+}
+
+-(void) managedObjCancelled {
+    [self markCancelled];
 }
 
 -(void) markCancelled {

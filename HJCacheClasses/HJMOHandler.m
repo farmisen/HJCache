@@ -119,6 +119,7 @@
 		[urlConn cancel];
 		[self clearLoadingState];
 		state=stateNew;
+        [self callbackCancelToUsers];
 	}
 }
 
@@ -304,6 +305,13 @@
 			[objManager removeFromHandlerFromCaches:self];
 			[self callbackFailedToUsers];
 		}
+	}
+}
+
+
+-(void) callbackCancelToUsers {
+	for (id<HJMOUser> user in [users objectEnumerator]) {
+		[user managedObjCancelled];
 	}
 }
 

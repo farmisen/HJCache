@@ -66,6 +66,7 @@
 -(void) startDownloadingFromURL;
 -(void) callbackReadyToUsers;
 -(void) callbackFailedToUsers;
+-(void) callbackCancelToUsers;
 -(void) goFromLoadedToReady;
 -(void) cancelLoading;
 -(void) clearLoadingState;

@@ -64,6 +64,8 @@
 -(void) setImage:(UIImage*)theImage modification:(int)mod;
 -(void) showLoadingWheel;
 -(void) setCallbackOnImageTap:(id)obj method:(SEL)m;
+-(void) managedObjCancelled;
+
 
 @end
 
